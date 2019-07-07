@@ -11,6 +11,9 @@
 		145ECD0E80A7457812EE9D46 /* Pods_ParseChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 352259526690A4BBC94A3413 /* Pods_ParseChat.framework */; };
 		9E052144D1A4EDC4C39A24ED /* Pods_ParseChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 721DB5384B4FFC9C741EA160 /* Pods_ParseChatTests.framework */; };
 		A5C6347A22D25D8C008DF312 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C6347922D25D8C008DF312 /* LoginViewController.m */; };
+		A5C6347E22D26394008DF312 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C6347D22D26394008DF312 /* SignUpViewController.m */; };
+		A5C6348122D2693C008DF312 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C6348022D2693C008DF312 /* ChatViewController.m */; };
+		A5C6348522D26E6C008DF312 /* ChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C6348422D26E6C008DF312 /* ChatCell.m */; };
 		A5D3724622D25AA6003EF484 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D3724522D25AA6003EF484 /* AppDelegate.m */; };
 		A5D3724C22D25AA6003EF484 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D3724A22D25AA6003EF484 /* Main.storyboard */; };
 		A5D3724E22D25AA7003EF484 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D3724D22D25AA7003EF484 /* Assets.xcassets */; };
@@ -46,8 +49,14 @@
 		39BCB54E81A7D41E60D4D836 /* Pods-ParseChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseChat.release.xcconfig"; path = "Target Support Files/Pods-ParseChat/Pods-ParseChat.release.xcconfig"; sourceTree = "<group>"; };
 		721DB5384B4FFC9C741EA160 /* Pods_ParseChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParseChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74575DBBC79ACADF99237B93 /* Pods-ParseChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseChatTests.release.xcconfig"; path = "Target Support Files/Pods-ParseChatTests/Pods-ParseChatTests.release.xcconfig"; sourceTree = "<group>"; };
-		A5C6347822D25D8C008DF312 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = SOURCE_ROOT; };
-		A5C6347922D25D8C008DF312 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = SOURCE_ROOT; };
+		A5C6347822D25D8C008DF312 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = "ParseChat/View Controllers/LoginViewController.h"; sourceTree = SOURCE_ROOT; };
+		A5C6347922D25D8C008DF312 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = "ParseChat/View Controllers/LoginViewController.m"; sourceTree = SOURCE_ROOT; };
+		A5C6347C22D26394008DF312 /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		A5C6347D22D26394008DF312 /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		A5C6347F22D2693C008DF312 /* ChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		A5C6348022D2693C008DF312 /* ChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		A5C6348322D26E6C008DF312 /* ChatCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatCell.h; sourceTree = "<group>"; };
+		A5C6348422D26E6C008DF312 /* ChatCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatCell.m; sourceTree = "<group>"; };
 		A5D3724122D25AA6003EF484 /* ParseChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D3724422D25AA6003EF484 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A5D3724522D25AA6003EF484 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -118,6 +127,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A5C6347B22D25EF9008DF312 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A5C6347822D25D8C008DF312 /* LoginViewController.h */,
+				A5C6347922D25D8C008DF312 /* LoginViewController.m */,
+				A5C6347C22D26394008DF312 /* SignUpViewController.h */,
+				A5C6347D22D26394008DF312 /* SignUpViewController.m */,
+				A5C6347F22D2693C008DF312 /* ChatViewController.h */,
+				A5C6348022D2693C008DF312 /* ChatViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A5C6348222D26E59008DF312 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A5C6348322D26E6C008DF312 /* ChatCell.h */,
+				A5C6348422D26E6C008DF312 /* ChatCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		A5D3723822D25AA6003EF484 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +175,8 @@
 		A5D3724322D25AA6003EF484 /* ParseChat */ = {
 			isa = PBXGroup;
 			children = (
+				A5C6348222D26E59008DF312 /* Views */,
+				A5C6347B22D25EF9008DF312 /* View Controllers */,
 				A5D3724422D25AA6003EF484 /* AppDelegate.h */,
 				A5D3724522D25AA6003EF484 /* AppDelegate.m */,
 				A5D3724A22D25AA6003EF484 /* Main.storyboard */,
@@ -151,8 +184,6 @@
 				A5D3724F22D25AA7003EF484 /* LaunchScreen.storyboard */,
 				A5D3725222D25AA7003EF484 /* Info.plist */,
 				A5D3725322D25AA7003EF484 /* main.m */,
-				A5C6347822D25D8C008DF312 /* LoginViewController.h */,
-				A5C6347922D25D8C008DF312 /* LoginViewController.m */,
 			);
 			path = ParseChat;
 			sourceTree = "<group>";
@@ -398,6 +429,9 @@
 			files = (
 				A5D3725422D25AA7003EF484 /* main.m in Sources */,
 				A5D3724622D25AA6003EF484 /* AppDelegate.m in Sources */,
+				A5C6348122D2693C008DF312 /* ChatViewController.m in Sources */,
+				A5C6348522D26E6C008DF312 /* ChatCell.m in Sources */,
+				A5C6347E22D26394008DF312 /* SignUpViewController.m in Sources */,
 				A5C6347A22D25D8C008DF312 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
